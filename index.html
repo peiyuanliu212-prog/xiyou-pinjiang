@@ -345,19 +345,18 @@ body { background: #E9EFE4; color: #22332A; }
 .keji-tag { font-size: 10px; font-weight: 700; color: #FFF7EA; background: #24506B; border-radius: 6px; padding: 1px 5px; margin-left: 5px; vertical-align: 2px; }
 </style>
 <style id="xiyou-bg">
-/* XY-BG-001 实图全幅背景（对标封神）：竖版红日祥云 fixed 铺底 + 暖金罩面/暗角 + 面板半透明透图 */
+/* XY-BG-002 实图全幅背景二修：红日祥云 fixed 铺底 + 仅四角极淡暗角（无浅色洗白层） + 面板真半透明透图 */
 body::before { content: ''; position: fixed; inset: 0; z-index: -2; pointer-events: none;
   background: url("assets/bg-vertical-v1.webp") center 30% / cover no-repeat, #E9DFC8; }
 body::after { content: ''; position: fixed; inset: 0; height: auto; z-index: -1; pointer-events: none;
-  background:
-    radial-gradient(120% 90% at 50% 42%, transparent 55%, rgba(146, 96, 32, .20) 100%),
-    linear-gradient(180deg, rgba(246, 239, 222, .38) 0%, rgba(246, 239, 222, .52) 46%, rgba(243, 233, 208, .66) 100%); }
-.card { background: rgba(247, 250, 241, .88); }
-.person-card, .pick-card, .opt-btn, .attr-btn, .attr-cell, .mine-panel { background: rgba(253, 250, 243, .88); }
-.btn { background: rgba(239, 243, 230, .90); }
-.btn-ghost { background: rgba(255, 255, 255, .88); }
-.resbar .res { background: rgba(255, 253, 246, .90); }
-.peak-box { background: rgba(238, 243, 226, .90); }
+  background: radial-gradient(125% 95% at 50% 42%, transparent 62%, rgba(146, 96, 32, .14) 100%); }
+.card { background: rgba(247, 250, 241, .70); }
+.card.hero { background: rgba(247, 250, 241, .42); }
+.person-card, .pick-card, .opt-btn, .attr-btn, .attr-cell, .mine-panel { background: rgba(253, 250, 243, .78); }
+.btn { background: rgba(239, 243, 230, .85); }
+.btn-ghost { background: rgba(255, 255, 255, .80); }
+.resbar .res { background: rgba(255, 253, 246, .82); }
+.peak-box { background: rgba(238, 243, 226, .82); }
 .modal-inner { background: rgba(247, 250, 241, .96); }
 </style>
 
